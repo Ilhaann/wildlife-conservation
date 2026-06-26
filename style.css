@@ -1,0 +1,77 @@
+/* Basic Reset for cross-browser consistency */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 1rem;
+}
+
+/* Responsive Container */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #2c5e1a; /* High contrast dark green */
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.video-wrapper {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: block; 
+}
+
+/* Responsive Video */
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.description {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Accessible Button Styling */
+button {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2c5e1a;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e4012;
+}
+
+/* Accessibility: Clear visual indicator for keyboard navigation */
+button:focus-visible {
+    outline: 3px solid #4a90e2;
+    outline-offset: 2px;
+}
